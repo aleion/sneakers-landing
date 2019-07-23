@@ -2,16 +2,20 @@
     padding: 0;
     margin: 0;
 }
+body{
+    margin: 0;
+    padding: 0;
+}
 
 /*    HEADER    */
 header{
     width: 100%;
-    height: 80px;
+    height: 100px;
     position: fixed;
     z-index: 3;
     display: flex;
     align-items: center;
-    padding-left: 30px;   
+    padding-left: 45px;   
 }
 header .brand{
     height: 50px;
@@ -21,95 +25,98 @@ header .navbar_icon{
     height: 100%;
     align-content: center;
     position: absolute;
-    right: 50px;
+    right: 70px;
 }
 header .navbar_icon img{
     height: 16px;
-    margin: auto 30px;
+    margin: auto 24px;
 }
 
 /*     WRAPPER     */
 .wrapper{
-    background-color: lightgray;
     width: 100vw;
     height: 100vh;
-    position: relative;    
+    position: relative;   
+    overflow: hidden; 
 }
 
 /*     SLIDES      */
 .slider{
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-}
-.slider-1{
-    background-color: lightgray;
-}
-.slider-2{
-    background-color: orangered;
-}
-.slider img.sneaker_logo{
-    position: absolute;
-    top: 40px;
-    left: 130px;
-    opacity: .1;
-}
-.slider div.sneaker_info{
-    position: absolute;
-    top: 200px;
-    right: 55%;
-    margin-left: 20px;
     display: grid;
-    grid-template-columns: 1fr;
-    width: 350px;
-    justify-items: start;
+    grid-template-columns: 50vw 50vw;
+}
+.sneaker_info{
+    position: relative;
+    width: 100%;
+    display: grid;
     align-items: center;
-    font-family: sans-serif;  
 }
-div.sneaker_info h1.sneaker_model{
+.sneaker_information{
+    width: 90%;
+    position: absolute;
+    height: 90%;
+    right: 0;
+    display: grid;
+    justify-items: end;
+    align-content: center;
+}
+img.sneaker_brand{
+    width: 85%;
+    opacity: .1;
+    position: absolute;
+    
+}
+.info_wrapper{
+    width: 80%;
+    margin-top: 70px;
+}
+h1.sneaker_model{
     font-size: 40px;
-    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
-div.sneaker_info p{
-    font-family: sans-serif;
+p.sneaker_description{
     font-size: 16px;
-    font-weight: 500;
+    width: 90%;
     margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-div.sneaker_info h2{
-    margin-bottom: 20px;
-    font-size: 34px;
-    font-family: sans-serif;
-    font-weight: 100;
+h2.sneaker_price{
+    margin-bottom: 25px;
+    font-size: 33px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-div.sneaker_info button{
-    height: 50px;
-    width: 150px;
+button.add_to_cart_btn{
     border: none;
-    color: white;
-    font-family: sans-serif;
-    letter-spacing: 2px;
-    font-weight: 200;
-    cursor: pointer;
-}
-button.add_button_1{
-    background-color: brown;
-}
-button.add_button_2{
-    background-color: blue;
+    background-color:red;
+    width: 150px;
+    height: 50px;
 }
 
-.slider img.sneaker_image{
-    position: absolute;
-    width: 60%;
-    top: 150px;
-    right: 150px;
-    transform: rotate(-26deg);
+.sneaker_img{
+    width: 100%;
+    
 }
+.sneaker_image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+img.sneaker_jpg{
+    height: 380px;
+    transform: rotate(-26deg);
+    position: absolute;
+    left: -220px;
+    top:150px;
+}
+
 
 /*     CONTROL     */
 .slider_control{
-
     z-index: 8;
     width: 120px;
     height: 45px;
@@ -127,6 +134,7 @@ button.add_button_2{
     justify-content: center;
     align-items: center;
     margin-left: 10px;
+    opacity: .7;
 }
 .control img{
     height: 15px;
@@ -134,8 +142,8 @@ button.add_button_2{
 
 /*    RRSS      */
 .rrss_box{
-    width: 320px;
-    height: 80px;
+    width: 300px;
+    height: 70px;
     background-color: black;
     position: fixed;
     bottom: 0;
