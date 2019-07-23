@@ -1,3 +1,17 @@
+@font-face{
+    font-family: 'Montserrat';
+    src: url(/fonts/Montserrat/Montserrat-Bold.ttf)
+         url(/fonts/Montserrat/Montserrat-Light.ttf)
+         url(/fonts/Montserrat/Montserrat-Regular.ttf)
+}
+@font-face{
+    font-family: 'Roboto';
+    src: url(/fonts/Roboto/Roboto-Light.ttf)
+}
+@font-face{
+    font-family: 'Futura';
+    src: url(/fonts/futura/Futura\ Bold\ font.ttf)
+}
 *{
     padding: 0;
     margin: 0;
@@ -42,12 +56,19 @@ header .navbar_icon img{
 
 /*     SLIDES      */
 .slider{
-    background-color: orangered;
     position: relative;
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 50vw 50vw;
+}
+.slider-1{
+    background: rgb(255,255,255);
+background: linear-gradient(150deg, rgba(255,255,255,1) 0%, rgba(145,145,145,1) 100%);
+}
+.slider-2{
+background: rgb(113,23,234);
+background: linear-gradient(-150deg, rgba(113,23,234,1) 0%, rgba(234,96,96,1) 80%); 
 }
 .sneaker_info{
     position: relative;
@@ -72,11 +93,11 @@ img.sneaker_brand{
 }
 .info_wrapper{
     width: 80%;
-    margin-top: 70px;
+    margin-top: 20px;
 }
 h1.sneaker_model{
     font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat';
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -84,18 +105,26 @@ p.sneaker_description{
     font-size: 16px;
     width: 90%;
     margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat';
+    font-weight: 400;
 }
 h2.sneaker_price{
-    margin-bottom: 25px;
-    font-size: 33px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 35px;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    font-family: 'Roboto';
 }
 button.add_to_cart_btn{
     border: none;
     background-color:red;
     width: 150px;
     height: 50px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: white;
 }
 
 .sneaker_img{
@@ -143,7 +172,6 @@ img.sneaker_jpg{
 /*     INDICATOR    */
 .indicators{
     height: 200px;
-    width: auto;
     position: fixed;
     right: 0;
     z-index: 10;
@@ -155,8 +183,15 @@ img.sneaker_jpg{
 .indicator{
     list-style: none;
     margin: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Futura';
+    font-size: 14px;
+    letter-spacing: 3px;
     font-weight: bold;
+    color:black;
+    opacity: .3;
+}
+.current-indicator{
+    font-size: 20px;
     opacity: .5;
 }
 
