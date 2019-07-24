@@ -12,7 +12,6 @@ const slideWidth = slides[0].getBoundingClientRect().width;
 const setSlidePosition = (slide , index) => {
     slide.style.left = slideWidth * index + 'px';
 };
-
 slides.forEach(setSlidePosition);
 
 
@@ -37,6 +36,8 @@ nextButton.addEventListener('click', e => {
     nextImg.classList.add('currentImg');
     nextText.classList.remove('nextText');
     nextText.classList.add('currentText');
+    console.log(currentSlide);
+    console.log(nextSlide);
     
     
 })
