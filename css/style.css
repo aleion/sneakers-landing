@@ -217,6 +217,7 @@ img.nextImg{
     font-size: 14px;
 }
 .indicator{
+    cursor: pointer;
     list-style: none;
     margin: 40px;
     font-family: 'Futura';
