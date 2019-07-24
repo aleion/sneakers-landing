@@ -69,11 +69,15 @@ header .navbar_icon img{
 }
 .slider-1{
     background: rgb(255,255,255);
-background: linear-gradient(150deg, rgba(255,255,255,1) 0%, rgba(145,145,145,1) 100%);
+    background: linear-gradient(150deg, rgba(255,255,255,1) 0%, rgba(145,145,145,1) 100%);
 }
 .slider-2{
-background: rgb(113,23,234);
-background: linear-gradient(-150deg, rgba(113,23,234,1) 0%, rgba(234,96,96,1) 80%); 
+    background: rgb(113,23,234);
+    background: linear-gradient(-150deg, rgba(113,23,234,1) 0%, rgba(234,96,96,1) 80%); 
+}
+.slider-3{
+    background: rgb(2, 0, 36);
+    background: linear-gradient(320deg, rgba(2,0,36,1)0%, rgba(255,228,174,1)100%);
 }
 .sneaker_info{
     position: relative;
@@ -211,7 +215,6 @@ img.nextImg{
     position: fixed;
     right: 0;
     z-index: 10;
-    color: black;
     top: 50%;
     transform: translateY(-50%);
     font-size: 14px;
@@ -224,7 +227,7 @@ img.nextImg{
     font-size: 14px;
     letter-spacing: 3px;
     font-weight: bold;
-    color:black;
+    color:white;
     opacity: .3;
 }
 .current-indicator{

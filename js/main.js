@@ -13,25 +13,33 @@ const setSlidePosition = (slide , index) => {
 };
 slides.forEach(setSlidePosition);
 
-
+const moveToSlide = (track, currentSlide, targetSlide) =>{
+    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+    currentSlide.classList.remove('current-slide');
+    targetSlide.classList.add('current-slide');
+   
+};
 
 //move slide to left
+prevButton.addEventListener('click', e => {
+    const currentSlide = track.querySelector('.current-slide');
+    const prevSlide = currentSlide.previousElementSibling;
+
+    moveToSlide(track, currentSlide, prevSlide);
+});
+
+
 //move slide to right
 nextButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling;
-    const amountToMove = nextSlide.style.left;
-    const currentImg = currentSlide.querySelector('.sneaker_jpg');
-    const nextImg = nextSlide.querySelector('.sneaker_jpg');
-    const currentText = currentSlide.querySelector('.sneaker_information');
-    const nextText = nextSlide.querySelector('.sneaker_information');
     
-    track.style.transform = 'translateX(-' + amountToMove + ')';
-    nextImg.classList.remove('nextImg');
-    nextImg.classList.add('currentImg');
-    nextText.classList.remove('nextText');
-    nextText.classList.add('currentText');
-    
-})
+    moveToSlide(track, currentSlide, nextSlide);
+});
 
 // click on indicator
+indicatorNav.addEventListener('click', e => {
+    const targetInd = e.target.closest('button');
+    console.log(e.targetInd);
+    
+});
