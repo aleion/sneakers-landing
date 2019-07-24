@@ -107,6 +107,10 @@ p.sneaker_description{
     margin-bottom: 20px;
     font-family: 'Montserrat';
     font-weight: 400;
+    letter-spacing: 3px;
+}
+.slider-2{
+    color: rgba(255, 255, 255, 0.774);
 }
 h2.sneaker_price{
     margin-bottom: 35px;
@@ -141,7 +145,7 @@ img.sneaker_jpg{
     transform: rotate(-22deg);
     position: absolute;
     left: -220px;
-    top:150px;
+    top:240px;
 }
 
 
