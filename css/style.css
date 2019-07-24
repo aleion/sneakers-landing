@@ -140,6 +140,11 @@ button.add_to_cart_btn{
     font-size: 12px;
     letter-spacing: 2px;
     color: white;
+    box-shadow: 0px 3px 5px rgb(0, 0, 0, .5); 
+    cursor: pointer;  
+}
+button.add_to_cart_btn:hover{
+    box-shadow: 0px 1px 3px rgb(0, 0, 0, .6);
 }
 .slider-1 button.add_to_cart_btn{
     background-color: #AD8D74;
