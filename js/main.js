@@ -4,19 +4,14 @@ const nextButton = document.querySelector('.right_control');
 const prevButton = document.querySelector('.left_control');
 const indicatorNav = document.querySelector('.indicator-list')
 const indicators = Array.from(indicatorNav.children);
-
 const slideWidth = slides[0].getBoundingClientRect().width;
 
-//arrange slide next to the other
 
+//arrange slide next to the other
 const setSlidePosition = (slide , index) => {
     slide.style.left = slideWidth * index + 'px';
 };
 slides.forEach(setSlidePosition);
-
-
-
-
 
 
 
@@ -36,9 +31,6 @@ nextButton.addEventListener('click', e => {
     nextImg.classList.add('currentImg');
     nextText.classList.remove('nextText');
     nextText.classList.add('currentText');
-    console.log(currentSlide);
-    console.log(nextSlide);
-    
     
 })
 
